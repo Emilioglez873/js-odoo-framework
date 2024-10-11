@@ -1,0 +1,1 @@
+# js-odoo-framework
