@@ -10,6 +10,8 @@
         <div>La suma es: <t t-esc="sum.value"/></div>
         <Card title="'Titulo 1'" text="'content of card 1'"/>
         <Card title="'Titulo 2'" text="innerHtml"/>
+
+        <TodoList />
     </t>
 
 </templates>
