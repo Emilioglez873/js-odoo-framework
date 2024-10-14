@@ -9,7 +9,6 @@ export class TodoList extends Component {
    
     static components = {TodoItem};
 
-
     addTodo(event){
         if(event.keyCode === 13){
             this.todos.push({
