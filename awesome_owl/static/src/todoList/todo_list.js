@@ -26,6 +26,13 @@ export class TodoList extends Component {
         this.todos = useState([]);
         useAutoFocus("input-list")
     }
+
+    toggleTodo(todoId){
+        const todo = this.todos.find((todo) => todo.id === todoId);
+        if(todo){
+            todo.isCompleted = !todo.isCompleted;
+        }
+    }
     
 
 }
