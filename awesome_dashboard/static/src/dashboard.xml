@@ -7,7 +7,15 @@
                 <button class="btn btn-primary" t-on-click="openKanbanView">Customers</button>
                 <button class="btn btn-primary" t-on-click="openLeads">Leads</button>
             </t>
-            some content
+            <div>
+                <DashboardItem >
+                    SOME CONTENT 2
+                </DashboardItem>
+
+                <DashboardItem size="2">
+                    SOME CONTENT
+                </DashboardItem>
+            </div>
 
         </Layout>
     </t>
