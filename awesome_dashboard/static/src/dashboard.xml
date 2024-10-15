@@ -9,12 +9,29 @@
             </t>
             <div>
                 <DashboardItem >
-                    SOME CONTENT 2
+                    Number of new orders this month
+                   <t t-esc="statistics.nb_new_orders" />
                 </DashboardItem>
 
                 <DashboardItem size="2">
-                    SOME CONTENT
+                    Total amount of new orders this month
+                    <t t-esc="statistics.total_amount" />
                 </DashboardItem>
+
+                <DashboardItem >
+                    Average amount of t-shirt by order this month
+                    <t t-esc="statistics.average_quantity" />
+                 </DashboardItem>
+
+                 <DashboardItem >
+                    Number of cancelled orders this month
+                    <t t-esc="statistics.nb_cancelled_orders" />
+                 </DashboardItem>
+
+                 <DashboardItem >
+                    Average time for an order to go from ‘new’ to ‘sent’ or ‘cancelled’
+                    <t t-esc="statistics.average_time" />
+                 </DashboardItem>
             </div>
 
         </Layout>
