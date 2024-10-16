@@ -18,7 +18,7 @@ class AwesomeDashboard extends Component {
         this.display = {
             controlPanel: {},
         };
-        this.items = items
+        this.items = registry.category("awesome_dashboard").getAll();
     }
     openKanbanView() {
         this.action.doAction("base.action_partner_form");
