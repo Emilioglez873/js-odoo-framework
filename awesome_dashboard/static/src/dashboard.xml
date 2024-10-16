@@ -7,7 +7,7 @@
                 <button class="btn btn-primary" t-on-click="openKanbanView">Customers</button>
                 <button class="btn btn-primary" t-on-click="openLeads">Leads</button>
             </t>
-            <div>
+            <div t-if="statistics.isReady">
                 <DashboardItem >
                     Number of new orders this month
                    <t t-esc="statistics.nb_new_orders" />
