@@ -1,6 +1,6 @@
 /** @odoo-module **/
 
-import { Component, useState } from "@odoo/owl";
+import { Component, useState, useExternalListener } from "@odoo/owl";
 import { registry } from "@web/core/registry";
 
 
@@ -10,10 +10,11 @@ export class SystrayItem extends Component{
     static props = {};
 
     setup(){
-      this.state = useState({counter: 0 });  
+      this.state = useState({counter: 0 });
+      useExternalListener(document.body, "click", () => this.state.counter++, true);  
     }
     increment(){
-        this.state.counter++;
+        this.state.counter += 9;
     }
 
 }
