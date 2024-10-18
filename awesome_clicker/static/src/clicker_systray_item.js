@@ -3,6 +3,7 @@
 import { Component, useState } from "@odoo/owl";
 import { registry } from "@web/core/registry";
 import { useService } from "@web/core/utils/hooks";
+import { useClicker } from "./use_clicker";
 
 export class SystrayItem extends Component{
 
@@ -10,7 +11,7 @@ export class SystrayItem extends Component{
     static props = {};
 
     setup(){
-        this.clickerService = useState(useService("awesome_clicker.clicker"))
+        this.clickerService = useClicker();
         this.action = useService("action")
 
     }
