@@ -13,6 +13,6 @@ export class ClickValue extends Component{
     }
  
     get humanNumber(){
-        return this.number = humanNumber(this.clicker.state.counter, { decimals: 0, minDigits: 1 })
+        return this.number = humanNumber(this.clicker.counter, { decimals: 0, minDigits: 1 })
     }
 }
