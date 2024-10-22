@@ -4,8 +4,23 @@
             <span>Clicks: 
                 <ClickValue />
             </span>
-            <button class="btn btn-primary ms-1" t-on-click="() => this.clickerService.increment(9)">
+            <button class="btn btn-primary ms-1" t-on-click="() => this.clickerService.increment(100)">
                 Increment
             </button>
-        </div>    </t>
+
+            <div t-if="clickerService.state.level >= 1">
+                <h2> Bots </h2>
+                <div class="card">
+                    <div class="card-header">
+                        <t t-esc="clickerService.state.clickBots"/>x ClickBots (10 clicks/10seconds)
+                    </div>
+                    <div class="card-body">
+                        <button t-on-click="() => this.clickerService.buyBot()" class="btn btn-primary" t-att-disabled="this.clickerService.state.counter lt 1000">
+                            Buy ClickBot (1000 clicks)
+                        </button>
+                    </div>
+                </div>
+            </div> 
+        </div>    
+    </t>
 </templates>
