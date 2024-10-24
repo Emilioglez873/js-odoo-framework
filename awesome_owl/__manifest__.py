@@ -1,14 +1,14 @@
 {
     'name': 'Awesome Owl',
     'summary': 'Starting module for "Discover the JS framework, chapter 1: Owl components',
-    'description': 'Starting module for "Discover the JS framework, chapter 1: Owl components',
+    'description': 'We created  basic components,  sub components, we added props validation, dynamic attributes and praciced owl slot system.',
     'author': "Odoo",
     'website': 'https://www.odoo.com',
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
     'category': 'Tutorials/AwesomeOwl',
-    "version": "0.1",
+    "version": "17.0",
     # any module necessary for this one to work correctly
     'depends': ['base', 'web'],
     'application': True,

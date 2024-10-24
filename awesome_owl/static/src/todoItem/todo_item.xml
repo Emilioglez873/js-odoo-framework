@@ -12,7 +12,6 @@
                 t-att-for="props.todo.id"
                 t-att-class="props.todo.isCompleted ? 'text-decoration-line-through text-muted' : '' "
             >
-                <t t-esc="props.todo.id" />
                 <t t-esc="props.todo.description" />
             </label>
             <span class="fa fa-remove" t-on-click="onDelete" />
