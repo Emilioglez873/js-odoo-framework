@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <templates xml:space="preserve">
 
     <t t-name="awesome_owl.playground">
@@ -9,14 +9,14 @@
         <Counter onChange.bind="incrementSum" />
         <Counter onChange.bind="incrementSum" />
 
-        <div>La suma es: <t t-esc="sum.value"/></div>
+        <div>La suma es: <t t-esc="sum.value" /></div>
 
         <Card title="'Titulo 1'">
-            contenido 
+            contenido
         </Card>
-        
+
         <Card title="'Titulo 3'">
-           <Counter /> 
+           <Counter />
         </Card>
 
         <TodoList />
