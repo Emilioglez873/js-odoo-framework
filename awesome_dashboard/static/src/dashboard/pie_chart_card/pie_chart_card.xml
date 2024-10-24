@@ -3,7 +3,7 @@
     <t t-name="awesome_dashboard.PieChartCard">
         <t t-esc="props.title" />
         <div class="">
-            <PieChart data="props.values" label="'Grafico'"/>
+            <PieChart data="props.values" label="'Grafico'" />
         </div>
     </t>
 </templates>

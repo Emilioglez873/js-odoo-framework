@@ -1,16 +1,14 @@
-# -*- coding: utf-8 -*-
-
 import logging
 import random
 
 from odoo import http
-from odoo.http import request
 
 logger = logging.getLogger(__name__)
 
+
 class AwesomeDashboard(http.Controller):
-    @http.route('/awesome_dashboard/statistics', type='json', auth='user')
-    def get_statistics(self):
+    @http.route('/dashboard/statistics', type='json', auth='user')
+    def get_dashboard_statistics(self):
         """
         Returns a dict of statistics about the orders:
             'average_quantity': the average number of t-shirts by order
@@ -31,6 +29,5 @@ class AwesomeDashboard(http.Controller):
                 's': random.randint(0, 150),
                 'xl': random.randint(0, 150),
             },
-            'total_amount': random.randint(100, 1000)
+            'total_amount': random.randint(100, 1000),
         }
-

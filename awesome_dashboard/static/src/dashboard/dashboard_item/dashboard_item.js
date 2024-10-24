@@ -1,6 +1,6 @@
 /** @odoo-module **/
 
-import { Component } from "@odoo/owl";
+import {Component} from "@odoo/owl";
 
 export class DashboardItem extends Component {
     static template = "awesome_dashboard.DashboardItem";
@@ -9,7 +9,7 @@ export class DashboardItem extends Component {
             type: Object,
             shape: {
                 default: true,
-            }
+            },
         },
         size: {
             type: Number,
@@ -17,8 +17,4 @@ export class DashboardItem extends Component {
             optional: true,
         },
     };
-   
-
 }
-
-
